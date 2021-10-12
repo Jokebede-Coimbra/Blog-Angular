@@ -1,0 +1,26 @@
+import { ContatoComponent } from './contato/contato.component';
+import { FeedComponent } from './feed/feed.component';
+import { HomeComponent } from './home/home.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: '', redirectTo: 'home', pathMatch: 'full'//página raiz principal e redireciona para home
+  },
+  {
+    path: 'home', component: HomeComponent
+  },
+  {
+    path: 'feed', component: FeedComponent
+  },
+  {
+    path: 'contato', component: ContatoComponent
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }

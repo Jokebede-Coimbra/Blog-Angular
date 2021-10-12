@@ -1,0 +1,17 @@
+/*zerar as magens*/
+
+
+.social-network {
+  list-style: none;
+}
+.social-network>li {
+  display: inline;
+  padding: 10px;
+  font-size: 2rem;
+}
+fa-icon {
+   color: rgb(141, 6, 80);
+ }
+fa-icon:hover {
+ color: darkslateblue;
+}
